@@ -7,6 +7,8 @@ public class Pokemon {
     private String tipo;
 
     public Pokemon() {
+        this.ataque = 100;
+        this.vida = 200;
     }
 
     public Pokemon(String nombre, int ataque, int vida, String tipo) {
@@ -63,4 +65,11 @@ public class Pokemon {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+    @Override
+    public String toString() {
+        return "Pokemon: " + "nombre=" + nombre + ", ataque=" + ataque + ", vida=" + vida + ", tipo=" + tipo;
+    }
+    
+    
 }

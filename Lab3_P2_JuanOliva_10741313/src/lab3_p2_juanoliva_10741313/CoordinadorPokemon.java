@@ -42,7 +42,7 @@ public class CoordinadorPokemon extends Entrenador{
                 lista += ((Pokemon)listaPokemon.get(i)).getNombre();
             }
         }
-        return super.toString() + "tipo=" + tipo + "Pokemon(s): "+ lista;
+        return super.toString() + " tipo= " + tipo + " Pokemon(s): "+ lista;
     }
     
     public void agregarListaPokemon(Pokemon pokemon){

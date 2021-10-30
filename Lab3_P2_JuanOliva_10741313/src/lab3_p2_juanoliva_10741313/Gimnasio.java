@@ -9,6 +9,7 @@ public class Gimnasio {
     Entrenador lider = new MaestroPokemon();
 
     public Gimnasio() {
+        this.dinero = 10000;
     }
 
     public Gimnasio(String nombre, String ciudad, int victorias, int derrotas, int dinero) {
@@ -98,8 +99,17 @@ public class Gimnasio {
         this.lider = lider;
     }
 
-    
-
-    
-    
+    @Override
+    public String toString() {
+        String lista ="Entrenador(es) = ";
+        for (int i = 0; i < Entrenadores.size(); i++) {
+            if(i<Entrenadores.size()-1){
+                lista+=((Entrenador)Entrenadores.get(i)).getNombre()+ " , ";
+            }else{
+                lista+=((Entrenador)Entrenadores.get(i)).getNombre();
+            }
+        }
+        return "Gimnasio{" + "nombre=" + nombre + ", ciudad=" + ciudad + ", victorias=" 
+                + victorias + ", derrotas=" + derrotas + ", dinero=" + dinero + lista + ", lider=" + lider + '}';
+    }
 }
