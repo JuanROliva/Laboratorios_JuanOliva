@@ -29,13 +29,10 @@ public class EntrenadorLegendario extends Entrenador{
     public void setLegendario(Pokemon pokemon) {
         this.pokemon = pokemon;
     }
-    
-    
 
     @Override
     public String toString() {
-        return super.toString()+ "tipo=" + tipo;
+        return super.toString() + " tipo=" + tipo + ", Pokemon Legendario=" + pokemon + '}';
     }
-    
     
 }

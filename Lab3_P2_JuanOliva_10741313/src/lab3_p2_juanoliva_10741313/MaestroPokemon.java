@@ -43,7 +43,7 @@ public class MaestroPokemon extends Entrenador {
 
     @Override
     public String toString() {
-        return super.toString()+ "tipo=" + tipo + ", victorias=" + victorias + ", pokemon=" + pokemon;
+        return super.toString()+ " tipo=" + tipo + ", victorias=" + victorias + ", pokemon=" + pokemon;
     }
     
     

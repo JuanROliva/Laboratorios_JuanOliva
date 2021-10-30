@@ -52,7 +52,7 @@ public class EntrenadorNovato extends Entrenador{
                 lista += ((Pokemon)listaPokemonDescubiertos.get(i)).getNombre();
             }
         }
-        return super.toString() + "tipo=" + tipo + ", pokemon=" + pokemon + lista;
+        return super.toString() + " tipo=" + tipo + ", pokemon=" + pokemon + lista;
     }
     
     public void agregarPokemonDescubierto(Pokemon pokemon){
