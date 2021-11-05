@@ -37,7 +37,9 @@ public class Capitan extends Soldado{
                 s.disminuirVida((arma.getDamage()*1.20));
             }else{
                 if (s instanceof InfanteriaLigera) {
-                    
+                    s.disminuirVida((arma.getDamage()*1.25));
+                }else{
+                    s.disminuirVida(arma.getDamage());
                 }
             }
         }
