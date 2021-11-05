@@ -37,4 +37,6 @@ public class SuperSoldado extends Soldado{
         listaArmas.add(new Escopeta());
         listaArmas.add(new LanzaLlamas());
     }
+    
+    
 }

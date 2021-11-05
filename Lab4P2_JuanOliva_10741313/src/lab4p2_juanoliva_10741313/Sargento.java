@@ -1,4 +1,5 @@
 package lab4p2_juanoliva_10741313;
+
 public class Sargento extends Soldado{
     private Arma arma;
 
@@ -29,7 +30,7 @@ public class Sargento extends Soldado{
     
     @Override
     public void ataque(Soldado s) {
-        if (s instanceof InfateriaLigera) {
+        if (s instanceof InfanteriaLigera) {
             s.disminuirVida((arma.getDamage()*1.15));
         }else{
             if (s instanceof InfanteriaPesada) {

@@ -1,13 +1,13 @@
 package lab4p2_juanoliva_10741313;
 
-public class InfateriaLigera extends Soldado{
+public class InfanteriaLigera extends Soldado{
     private Arma arma;
 
-    public InfateriaLigera() {
+    public InfanteriaLigera() {
         super();
     }
 
-    public InfateriaLigera(String nombre, int edad, int tiempo, String rango, int puntosVida) throws Exception {
+    public InfanteriaLigera(String nombre, int edad, int tiempo, String rango, int puntosVida) throws Exception {
         super(nombre, edad, tiempo, rango, puntosVida);
     }
 

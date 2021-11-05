@@ -30,5 +30,16 @@ public class Capitan extends Soldado{
 
     @Override
     public void ataque(Soldado s) {
+        if (s instanceof Sargento) {
+            s.disminuirVida((arma.getDamage()*1.15));
+        }else{
+            if (s instanceof InfanteriaPesada) {
+                s.disminuirVida((arma.getDamage()*1.20));
+            }else{
+                if (s instanceof InfanteriaLigera) {
+                    
+                }
+            }
+        }
     }
 }
