@@ -37,6 +37,9 @@ public class SuperSoldado extends Soldado{
         listaArmas.add(new Escopeta());
         listaArmas.add(new LanzaLlamas());
     }
-    
-    
+
+    @Override
+    public void ataque(Soldado s) {
+        
+    }
 }
