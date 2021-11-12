@@ -27,7 +27,7 @@ public class Sargento extends Soldado{
     public void armas() {
         arma = new Escopeta();
     }
-    
+
     @Override
     public void ataque(Soldado s) {
         if (s instanceof InfanteriaLigera) {
